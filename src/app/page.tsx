@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="w-full h-dvh bg-[#272727] text-[#9ca3af]">
       <main className="w-3/4 h-full mx-auto flex border-2 border-sky-600">
-        <div className="flex-1 px-8">
+        <div className="flex-1 px-8 flex flex-col gap-6">
           <section
             title="About_me"
             className="flex justify-between items-center h-20"
@@ -93,21 +93,36 @@ export default function Home() {
             </nav>
           </section>
 
-          <section title="Profile">
-            <div className="w-44 h-44 overflow-hidden rounded-xl">
-              <Image src={profile} alt="Mateus Villa Nova profile photo" />
+          <section title="Profile" className="flex items-center gap-16">
+            <div className="size-44 overflow-hidden rounded-xl">
+              <Image
+                src={profile}
+                width={1500}
+                height={1832}
+                alt="Mateus Villa Nova profile photo"
+              />
             </div>
+
             <p>
-              Welcome!
-              <span>I&#39;m Mateus Villa Nova</span>
+              Welcome! <br />
+              <span>
+                I&#39;m{' '}
+                <span className="bg-gradient-to-tr from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+                  {' '}
+                  Mateus Villa Nova
+                </span>
+              </span>
             </p>
           </section>
 
           <section title="Fun_Facts">
+            <h3>FUN FACTS:</h3>
+
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>24 years old</li>
+              <li>Graduated in administration</li>
+              <li>I worked as a real estate agent</li>
+              <li>I took up programming in 2022.</li>
             </ul>
           </section>
 
@@ -122,7 +137,7 @@ export default function Home() {
 
           <section title="Contact"></section>
         </div>
-        <div className="border-2 flex-1"></div>
+        <div className="border-2 flex-1 px-8"></div>
       </main>
     </div>
   )
