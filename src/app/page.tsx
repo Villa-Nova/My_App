@@ -1,17 +1,21 @@
 import Image from 'next/image'
 
 import cv from '../../public/assets/cv.png'
+import profile from '../../public/assets/profileMVN.png'
 
 export default function Home() {
   return (
-    <body className="w-full h-dvh">
-      <main>
-        <div>
-          <section title="About_me">
+    <div className="w-full h-dvh bg-[#272727] text-[#9ca3af]">
+      <main className="w-3/4 h-full mx-auto flex border-2 border-sky-600">
+        <div className="flex-1 px-8">
+          <section
+            title="About_me"
+            className="flex justify-between items-center h-20"
+          >
             <h3>ABOUT ME</h3>
 
             <nav>
-              <ul>
+              <ul className="w-32 flex justify-between items-baseline">
                 <li>
                   <a
                     href="http://www.linkedin.com/in/mateusvillanova/"
@@ -21,8 +25,8 @@ export default function Home() {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 48 48"
-                      width="48px"
-                      height="48px"
+                      width="20px"
+                      height="20px"
                     >
                       <path
                         fill="#9ca3af"
@@ -48,8 +52,8 @@ export default function Home() {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 48 48"
-                      width="48px"
-                      height="48px"
+                      width="20px"
+                      height="20px"
                     >
                       <path
                         fill="#e0e0e0"
@@ -83,16 +87,19 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <Image src={cv} alt="CV icon" />
+                  <Image src={cv} width={22} height={22} alt="CV icon" />
                 </li>
               </ul>
             </nav>
           </section>
 
           <section title="Profile">
-            <img src="" alt="" />
+            <div className="w-44 h-44 overflow-hidden rounded-xl">
+              <Image src={profile} alt="Mateus Villa Nova profile photo" />
+            </div>
             <p>
-              <span></span>
+              Welcome!
+              <span>I&#39;m Mateus Villa Nova</span>
             </p>
           </section>
 
@@ -115,8 +122,8 @@ export default function Home() {
 
           <section title="Contact"></section>
         </div>
-        <div></div>
+        <div className="border-2 flex-1"></div>
       </main>
-    </body>
+    </div>
   )
 }
