@@ -5,14 +5,16 @@ import profile from '../../public/assets/profileMVN.png'
 
 export default function Home() {
   return (
-    <div className="w-full h-dvh bg-[#272727] text-[#9ca3af]">
+    <div className="w-full h-dvh bg-[#121212] text-[#9ca3af]">
       <main className="w-3/4 h-full mx-auto flex border-2 border-sky-600">
-        <div className="flex-1 px-8 flex flex-col gap-6">
+        <div className="flex-1 px-8 flex flex-col justify-between">
           <section
             title="About_me"
             className="flex justify-between items-center h-20"
           >
-            <h3>ABOUT ME</h3>
+            <header>
+              <h3>ABOUT ME</h3>
+            </header>
 
             <nav>
               <ul className="w-32 flex justify-between items-baseline">
@@ -116,7 +118,9 @@ export default function Home() {
           </section>
 
           <section title="Fun_Facts">
-            <h3>FUN FACTS:</h3>
+            <header>
+              <h3>FUN FACTS:</h3>
+            </header>
 
             <ul>
               <li>24 years old</li>
@@ -127,17 +131,50 @@ export default function Home() {
           </section>
 
           <section title="Summary">
+            <header>
+              <h3>SUMMARY</h3>
+            </header>
+
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem dolores natus minus, obcaecati esse odio officia
-              reiciendis, fuga aspernatur in doloremque modi incidunt.
-              Aspernatur maiores culpa quaerat, omnis expedita minima!
+              As a web developer, I am always seeking new knowledge and looking
+              to improve my skills. I participated in company projects such as{' '}
+              <a
+                href="https://www.linkedin.com/company/lab-yes/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lab Yes!
+              </a>
+              , where the focus was on volunteerism, during which time I was
+              able to develop my teamwork skills using agile methodologies.
+              Currently, my focus is on personal growth, accompanied by good
+              music.
             </p>
           </section>
 
-          <section title="Contact"></section>
+          <section title="Contact">
+            <header>
+              <h3>CONTACT</h3>
+            </header>
+
+            <p>
+              If you want to chat with me, feel free to hit me up on{' '}
+              <a
+                href="https://www.linkedin.com/in/mateusvillanova/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>{' '}
+              or send an email to{' '}
+              <a href="mailto:villa1999nova@gmail.com">
+                villa1999nova@gmail.com
+              </a>
+              .
+            </p>
+          </section>
         </div>
-        <div className="border-2 flex-1 px-8"></div>
+        <div className="border-2 flex-[2] px-8"></div>
       </main>
     </div>
   )
