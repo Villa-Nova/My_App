@@ -5,18 +5,16 @@ import profile from '../../public/assets/profileMVN.png'
 
 export default function Home() {
   return (
-    <main className="w-3/4 h-full mx-auto flex border-2 border-sky-600">
-      <div className="flex-1 px-8 flex flex-col justify-between">
-        <section
+    <main className="w-3/4 h-full mx-auto flex">
+      <div className="border-[1px] flex-1 px-8 flex flex-col justify-between">
+        <header
           title="About_me"
           className="flex justify-between items-center h-20"
         >
-          <header>
-            <h3 className="font-agrandir text-xs font-medium">ABOUT ME</h3>
-          </header>
+          <h3 className="font-agrandir text-xs font-medium">ABOUT ME</h3>
 
           <nav>
-            <ul className="w-32 flex justify-between items-baseline">
+            <ul className="w-20 flex justify-between items-center">
               <li>
                 <a
                   href="http://www.linkedin.com/in/mateusvillanova/"
@@ -92,7 +90,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-        </section>
+        </header>
 
         <section title="Profile" className="flex items-center gap-11">
           <div className="size-44 overflow-hidden rounded-xl">
@@ -149,7 +147,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section title="Contact">
+        <footer title="Contact">
           <header>
             <h3 className="title-agrandir">CONTACT</h3>
           </header>
@@ -167,9 +165,9 @@ export default function Home() {
             <a href="mailto:villa1999nova@gmail.com">villa1999nova@gmail.com</a>
             .
           </p>
-        </section>
+        </footer>
       </div>
-      <div className="border-2 flex-[2] px-8"></div>
+      <aside className="border-2 flex-[2] px-8"></aside>
     </main>
   )
 }
