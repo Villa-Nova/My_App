@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         agrandir: ['agrandir', 'sans-serif'],
       },
+      colors: {
+        gold: '#fcf0de',
+      },
     },
   },
   plugins: [],

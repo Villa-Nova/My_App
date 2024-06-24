@@ -6,7 +6,7 @@ import profile from '../../public/assets/profileMVN.png'
 export default function Home() {
   return (
     <main className="w-3/4 h-full mx-auto flex">
-      <div className="border-[1px] flex-1 px-8 flex flex-col justify-between">
+      <div className="flex-1 px-8 flex flex-col gap-20">
         <header
           title="About_me"
           className="flex justify-between items-center h-20"
@@ -93,59 +93,69 @@ export default function Home() {
         </header>
 
         <section title="Profile" className="flex items-center gap-11">
-          <div className="size-44 overflow-hidden rounded-xl">
+          <div className="aspect-square max-w-32 max-h-32 min-w-24 min-h-24 overflow-hidden rounded-2xl border-2 border-[#323232]">
             <Image
+              title="Mateus Villa Nova"
               src={profile}
               width={1500}
               height={1832}
               alt="Mateus Villa Nova profile photo"
+              className="object-cover"
             />
           </div>
 
-          <p>
+          <p className="text-2xl tracking-wider leading-8">
             Welcome! <br />
             <span>
               I&#39;m{' '}
-              <span className="bg-gradient-to-tr from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+              <span
+                title="Mateus Villa Nova"
+                className="font-bold bg-gradient-to-tr from-indigo-500 to-purple-500 bg-clip-text text-transparent"
+              >
                 Mateus Villa Nova
               </span>
             </span>
           </p>
         </section>
 
-        <section title="Fun_Facts">
-          <header>
-            <h3 className="title-agrandir">FUN FACTS:</h3>
-          </header>
+        <div className="flex flex-col gap-20">
+          <section title="Fun_Facts">
+            <header>
+              <h3 className="title-agrandir">FUN FACTS:</h3>
+            </header>
 
-          <ul className="list-inside list-disc">
-            <li>24 years old</li>
-            <li>Graduated in administration</li>
-            <li>I worked as a real estate agent</li>
-            <li>I took up programming in 2022.</li>
-          </ul>
-        </section>
+            <ul className="list-inside list-disc">
+              <li>24 years old</li>
+              <li>Graduated in administration</li>
+              <li>I worked as a real estate agent</li>
+              <li>I took up programming in 2022.</li>
+            </ul>
+          </section>
 
-        <section title="Summary">
-          <header>
-            <h3 className="title-agrandir">SUMMARY</h3>
-          </header>
+          <section title="Summary">
+            <header>
+              <h3 className="title-agrandir">SUMMARY</h3>
+            </header>
 
-          <p>
-            As a web developer, I am always seeking new knowledge and looking to
-            improve my skills. I participated in company projects such as{' '}
-            <a
-              href="https://www.linkedin.com/company/lab-yes/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Lab Yes!
-            </a>
-            , where the focus was on volunteerism, during which time I was able
-            to develop my teamwork skills using agile methodologies. Currently,
-            my focus is on personal growth, accompanied by good music.
-          </p>
-        </section>
+            <p>
+              As a web developer, I am always seeking new knowledge and looking
+              to improve my skills. I participated in company projects such as{' '}
+              <a
+                title="Lab Yes!"
+                href="https://www.linkedin.com/company/lab-yes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold"
+              >
+                Lab Yes!
+              </a>
+              , where the focus was on volunteerism, during which time I was
+              able to develop my teamwork skills using agile methodologies.
+              Currently, my focus is on personal growth, accompanied by good
+              music.
+            </p>
+          </section>
+        </div>
 
         <footer title="Contact">
           <header>
@@ -155,19 +165,27 @@ export default function Home() {
           <p>
             If you want to chat with me, feel free to hit me up on{' '}
             <a
+              title="LinkedIn"
               href="https://www.linkedin.com/in/mateusvillanova/"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-sky-500"
             >
               LinkedIn
             </a>{' '}
             or send an email to{' '}
-            <a href="mailto:villa1999nova@gmail.com">villa1999nova@gmail.com</a>
+            <a
+              title="Gmail"
+              href="mailto:villa1999nova@gmail.com"
+              className="text-pink-600"
+            >
+              villa1999nova@gmail.com
+            </a>
             .
           </p>
         </footer>
       </div>
-      <aside className="border-2 flex-[2] px-8"></aside>
+      <aside className="border-2 flex-[2] px-8 bg-[#121212]"></aside>
     </main>
   )
 }
