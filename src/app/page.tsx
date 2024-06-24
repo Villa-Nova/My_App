@@ -5,8 +5,8 @@ import profile from '../../public/assets/profileMVN.png'
 
 export default function Home() {
   return (
-    <main className="w-3/4 h-full mx-auto flex">
-      <div className="flex-1 px-8 flex flex-col gap-20">
+    <main className="h-full mx-auto flex flex-col xl:flex-row xl:w-3/4">
+      <div className="flex-1 px-8 flex flex-col gap-10 xl:gap-20">
         <header
           title="About_me"
           className="flex justify-between items-center h-20"
@@ -92,7 +92,10 @@ export default function Home() {
           </nav>
         </header>
 
-        <section title="Profile" className="flex items-center gap-11">
+        <section
+          title="Profile"
+          className="flex flex-col text-center items-center gap-11 nano:flex-row nano:text-left"
+        >
           <div className="aspect-square max-w-32 max-h-32 min-w-24 min-h-24 overflow-hidden rounded-2xl border-2 border-[#323232]">
             <Image
               title="Mateus Villa Nova"
@@ -118,8 +121,8 @@ export default function Home() {
           </p>
         </section>
 
-        <div className="flex flex-col gap-20">
-          <section title="Fun_Facts">
+        <div className="flex gap-10 flex-col sm:flex-row xl:flex-col xl:gap-20">
+          <section title="Fun_Facts" className="flex-1">
             <header>
               <h3 className="title-agrandir">FUN FACTS:</h3>
             </header>
@@ -132,7 +135,7 @@ export default function Home() {
             </ul>
           </section>
 
-          <section title="Summary">
+          <section title="Summary" className="flex-1">
             <header>
               <h3 className="title-agrandir">SUMMARY</h3>
             </header>

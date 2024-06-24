@@ -19,6 +19,9 @@ const config: Config = {
       colors: {
         gold: '#fcf0de',
       },
+      screens: {
+        nano: '336px',
+      },
     },
   },
   plugins: [],
