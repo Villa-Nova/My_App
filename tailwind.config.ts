@@ -24,6 +24,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@savvywombat/tailwindcss-grid-areas')],
 }
 export default config
