@@ -5,11 +5,8 @@ import profile from '../../../../public/assets/profileMVN.png'
 
 export function AboutMe() {
   return (
-    <div className="flex-1 px-8 flex flex-col gap-10 xl:gap-20">
-      <header
-        title="About_me"
-        className="flex justify-between items-center h-20"
-      >
+    <div className="flex-1 px-8 py-7 flex flex-col xl:overflow-x-scroll h-dvh justify-between gap-10">
+      <header title="About_me" className="flex justify-between">
         <h3 className="font-agrandir text-xs font-medium">ABOUT ME</h3>
 
         <nav>
@@ -120,7 +117,7 @@ export function AboutMe() {
         </p>
       </section>
 
-      <div className="flex gap-10 flex-col sm:flex-row xl:flex-col xl:gap-20">
+      <div className="flex flex-col sm:flex-row xl:flex-col gap-10 xl:gap-16">
         <section title="Fun_Facts" className="flex-1">
           <header>
             <h3 className="title-agrandir">FUN FACTS:</h3>
