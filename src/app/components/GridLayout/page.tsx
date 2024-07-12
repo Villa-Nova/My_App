@@ -1,9 +1,11 @@
+import { Switcher } from '@/components/Switcher'
+
 export function GridLayout() {
   return (
     <aside className="flex-[2] px-8 py-7 max-h-dvh xl:overflow-y-scroll">
       <div className="grid gap-4 rounded_border grid-areas-nano-layout grid-cols-nano-layout grid-rows-nano-layout sm:grid-cols-sm-layout sm:grid-areas-sm-layout md:grid-areas-md-layout md:grid-cols-md-layout xl:grid-rows-xl-layout">
-        <div className="bg-indigo-100 aspect-square w-full h-full grid-in-A">
-          light/dark mode
+        <div className="bg-indigo-100 dark:bg-rose-400 aspect-square w-full h-full grid-in-A flex justify-center items-center">
+          <Switcher />
         </div>
         <div className="bg-indigo-200 aspect-[16/5] w-full h-full grid-in-B">
           Spotify
