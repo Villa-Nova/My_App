@@ -1,5 +1,5 @@
-import { AboutMe } from './components/AboutMe/page'
-import { GridLayout } from './components/GridLayout/page'
+import { AboutMe } from './components/AboutMe'
+import { GridLayout } from './components/GridLayout'
 
 export default function Home() {
   return (
