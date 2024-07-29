@@ -32,6 +32,18 @@
   font-family: 'agrandir';
 }
 
-.rounded_border * {
+.rounded_border > * {
   border-radius: 1.75rem;
+}
+
+.status_discord_shadow_on {
+  box-shadow: 0px 0px 30px #3ee57b;
+}
+
+.status_discord_shadow_off {
+  box-shadow: 0px 0px 30px #ff0000;
+}
+
+.status_discord_shadow_idle {
+  box-shadow: 0px 0px 30px #ecdd40;
 }
