@@ -19,7 +19,7 @@ export function DiscordStatus() {
     fetchData()
 
     const intervalId = setInterval(fetchData, 4000)
-    const clearIntervalId = clearInterval(intervalId)
+    const clearIntervalId = () => clearInterval(intervalId)
 
     return clearIntervalId
   }, [])
