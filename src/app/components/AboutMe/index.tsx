@@ -92,7 +92,7 @@ export function AboutMe() {
         title="Profile"
         className="flex flex-col text-center items-center gap-11 nano:flex-row nano:text-left"
       >
-        <div className="aspect-square max-w-32 max-h-32 min-w-24 min-h-24 overflow-hidden rounded-2xl border-2 border-[#323232]">
+        <div className="aspect-square max-w-32 max-h-32 min-w-24 min-h-24 overflow-hidden rounded-2xl border-2 border-[#a2a2a6] dark:border-[#323232]">
           <Image
             title="Mateus Villa Nova"
             src={profile}
@@ -144,7 +144,7 @@ export function AboutMe() {
               href="https://www.linkedin.com/company/lab-yes/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gold"
+              className="text-amber-600 dark:text-gold"
             >
               Lab Yes!
             </a>

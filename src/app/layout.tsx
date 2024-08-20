@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-full h-fit bg-[#121212] text-[#9ca3af] text-agrandir antialiased">
+      <body className="w-full h-fit bg-gray-100 dark:bg-[#121212] text-[#575a5f] dark:text-[#9ca3af] text-agrandir antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
