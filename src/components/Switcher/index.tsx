@@ -17,7 +17,7 @@ export function Switcher() {
         type="checkbox"
         className="theme-switch__checkbox"
         onChange={() => handleThemeChange()}
-        checked={theme === 'dark'}
+        checked
       />
       <div className="theme-switch__container">
         <div className="theme-switch__clouds"></div>
