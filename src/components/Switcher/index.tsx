@@ -3,24 +3,21 @@
 import { useTheme } from 'next-themes'
 
 import './style.css'
+import { InputSwitcher } from './components'
 
 export function Switcher() {
   const { theme, setTheme } = useTheme()
 
-  const handleThemeChange = () => {
+  const themeChange = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
   return (
     <label className="theme-switch">
-      <input
-        type="checkbox"
-        className="theme-switch__checkbox"
-        onChange={() => handleThemeChange()}
-        checked
-      />
+      <InputSwitcher onChange={themeChange} />
+
       <div className="theme-switch__container">
-        <div className="theme-switch__clouds"></div>
+        <div className="theme-switch__clouds" />
         <div className="theme-switch__stars-container">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,9 +35,9 @@ export function Switcher() {
         <div className="theme-switch__circle-container">
           <div className="theme-switch__sun-moon-container">
             <div className="theme-switch__moon">
-              <div className="theme-switch__spot"></div>
-              <div className="theme-switch__spot"></div>
-              <div className="theme-switch__spot"></div>
+              <div className="theme-switch__spot" />
+              <div className="theme-switch__spot" />
+              <div className="theme-switch__spot" />
             </div>
           </div>
         </div>
