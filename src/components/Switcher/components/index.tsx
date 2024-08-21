@@ -5,7 +5,7 @@ interface InputSwitcherProps {
 }
 
 export function InputSwitcher({ onChange }: InputSwitcherProps) {
-  const [isChecked, setIsChecked] = useState(false)
+  const [isChecked, setIsChecked] = useState(true)
 
   function handleCheckBoxChange() {
     setIsChecked(!isChecked)
