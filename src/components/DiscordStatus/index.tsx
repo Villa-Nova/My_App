@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 
 import '../../styles/globals.css'
 import { Status, handleStatus } from '@/lib/status'
@@ -17,14 +17,7 @@ export function DiscordStatus() {
     }
   }
 
-  useEffect(() => {
-    fetchData()
-
-    const intervalId = setInterval(fetchData, 4000)
-    const clearIntervalId = () => clearInterval(intervalId)
-
-    return clearIntervalId
-  }, [])
+  fetchData()
 
   const [mode, bgClass, shadow] = useMemo(() => {
     if (!status) return ['loading', 'bg-gray-400']
