@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './../styles/globals.css'
-import { ThemeProvider } from '@/providers/themeProvider'
 
 export const metadata: Metadata = {
   title: 'Villa Nova',
@@ -15,10 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-full h-fit bg-gray-100 dark:bg-[#121212] text-[#575a5f] dark:text-[#9ca3af] text-agrandir antialiased">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-        </ThemeProvider>
+      <body className="w-full h-fit bg-[#121212] text-[#9ca3af] text-agrandir antialiased">
+        {children}
       </body>
     </html>
   )

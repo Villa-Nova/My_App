@@ -144,7 +144,7 @@ export function AboutMe() {
               href="https://www.linkedin.com/company/lab-yes/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-600 dark:text-gold"
+              className="text-gold"
             >
               Lab Yes!
             </a>
