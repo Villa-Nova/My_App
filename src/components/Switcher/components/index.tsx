@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { GoAlertFill } from 'react-icons/go'
 import { toast } from 'sonner'
+import { useState } from 'react'
 
 export function ThemeSwitcher() {
   const [isOpen, setIsOpen] = useState(true)
@@ -17,14 +18,19 @@ export function ThemeSwitcher() {
     toast(alertPhrase, {
       style: {
         border: 'none',
-        color: '#cbd5e1',
-        background: '#db2777',
+        color: '#000000',
+        background: '#fcd34d ',
         padding: '1rem',
+        boxShadow: '0 0 4px #000000',
+        fontFamily: 'agrandir',
+        fontSize: '1rem',
+        width: '365px',
       },
-      duration: 3000,
+      icon: <GoAlertFill />,
+      duration: 2000,
     })
 
-    setTimeout(closeModal, 3000)
+    setTimeout(closeModal, 2000)
   }
 
   return (
