@@ -47,3 +47,8 @@
 .status_discord_shadow_idle {
   box-shadow: 0px 0px 30px #ecdd40;
 }
+
+.music_border {
+  box-shadow: 0px 0px 10px #748bfa;
+}
+
