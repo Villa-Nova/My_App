@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import '../../styles/globals.css'
 import { Status, handleStatus } from '@/lib/status'
@@ -8,16 +8,18 @@ import { Status, handleStatus } from '@/lib/status'
 export function DiscordStatus() {
   const [status, setStatus] = useState<Status | undefined>('offline')
 
-  const fetchData = async () => {
-    try {
-      const data = await handleStatus()
-      setStatus(data)
-    } catch (err) {
-      console.error(err)
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await handleStatus()
+        setStatus(data)
+      } catch (err) {
+        console.error(err)
+      }
     }
-  }
 
-  fetchData()
+    fetchData()
+  }, [])
 
   const [mode, bgClass, shadow] = useMemo(() => {
     if (!status) return ['loading', 'bg-gray-400']
