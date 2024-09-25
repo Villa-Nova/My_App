@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 
 import '../../styles/globals.css'
-import { Status, handleStatus } from '@/lib/status'
+import { Status, handleStatus } from '@/app/api/status'
 
 export function DiscordStatus() {
   const [status, setStatus] = useState<Status | undefined>('offline')
